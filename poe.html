@@ -19,7 +19,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Acceuil</a>
+						<a href="index.html" class="logo">Clara Mostacchi</a>
 					</header>
 
 				<!-- Nav -->
@@ -31,10 +31,8 @@
 							<li  class="active"><a href="poe.html">Preuve d'existence</a></li>
 						</ul>
 						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/clara-mostacchi/" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/MostacchiClara" target="_blank" class="icon fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
 
@@ -42,6 +40,7 @@
 					<div id="main">
 
 						<!-- Post -->
+						  
 							<section class="post">
 								<header class="major">
 									<h1>Preuve d'existence</h1>
@@ -49,18 +48,23 @@
 								</header>
 
 								<!-- Text stuff -->
-									<section>
-										<p>Connectez-vous à MetaMask</p>
+								<section v-if="!upload_visible">
+										<div class="container" id="maincontent" tabindex="-1">
+         										 <div class="row">
+              										<div class="col-lg-12">
+                  										<div class="intro-text">
+                      										
+                      										<hr class="star-light">
+                      										<span class="skills">Connectez vous à MetaMask</span>
+                  										</div>
+                  									<div>
+	                    							<button type="button" class="btn btn-primary btn-lg buttonspace" v-on:click="display_upload">Enregistrer un texte !</button>
+	                  								</div>
+              										</div>
+        										  </div>
+      									</div>
+  								</section>
 
-
-                 					 <div>
-                   						 <button type="button" class="btn btn-primary btn-lg buttonspace" v-on:click="display_upload">Enregistrer un texte !</button>
-                 					 </div>
-              
-          
-     
-  								</header>
- 
   									<section id = "upload" v-if="upload_visible" v-cloak>
 								     <div class="container">
 								       <div class="row">
@@ -116,7 +120,7 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li> Monnaies Numériques</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
 
 			</div>
@@ -130,7 +134,11 @@
 			<script src="assets/js/main.js"></script>
 			<script src="js/solidity.js"></script>
   			<script src="js/nottario.js"></script>
-  			<script src="js/contract.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  			<script src="https://unpkg.com/vue"></script>
+
+
+  			
 
 	</body>
 </html>

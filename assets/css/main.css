@@ -2020,9 +2020,9 @@
 	input[type="button"],
 	button,
 	.button {
-		background-color: transparent;
-		box-shadow: inset 0 0 0 2px #212931;
-		color: #212931 !important;
+		background-color: #212931;
+		box-shadow: none;
+		color: #ffffff !important;
 	}
 
 		input[type="submit"]:hover,
@@ -2030,8 +2030,8 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 2px #F2D7D5;
-			color: #F2D7D5 !important;
+			background-color: #F2D7D5;
+			color : white;
 		}
 
 		input[type="submit"].special,
@@ -2039,9 +2039,9 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #212931;
-			box-shadow: none;
-			color: #ffffff !important;
+			background-color: transparent;
+			box-shadow: inset 0 0 0 2px #212931;
+			color: #212931 !important;
 		}
 
 			input[type="submit"].special:hover,
@@ -2049,7 +2049,9 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #F2D7D5;
+				
+				box-shadow: inset 0 0 0 2px #F2D7D5;
+				color: #F2D7D5 !important;
 			}
 
 /* Form */
@@ -4493,11 +4495,13 @@
 		width: 30%;
 		text-align : center;
 		vertical-align: middle;
-		background-color: #212931;
-		    margin: 0 0 2rem 0;
+		
+		margin: 0 0 2rem 0;
     	
     	color: #ffffff !important;
 
 
 	}
+
+
 
