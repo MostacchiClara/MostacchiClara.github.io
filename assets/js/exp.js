@@ -7,7 +7,7 @@ $(document).ready(function(){
 				sortie += data.error;
 			}
 			else{
-				sortie += '</p><p><b>Hash:</b> '+data.hash+'<p><b>Height: </b>'+data.height+'</p><p><b>Time: </b>'+data.time +'</p><p><b>Size: </b>' +data.size + 'bytes </p>';
+				sortie += '</p><p><b>Hash:</b> '+data.hash+'<p><b>Hauteur: </b>'+data.height+'</p><p><b>Time: </b>'+data.time +'</p><p><b>Taille: </b>' +data.size + ' bytes </p>';
 
 			}
 			$('#resultat').html( sortie );
@@ -23,7 +23,7 @@ $(document).ready(function(){
 			else{
 				sortie += '</p><p><b>Adresses bitcoin impliquées dans la transaction:</b> '+data.addresses
 				+'<p><b>Hash: </b>'+data.hash+'</p><p><b>Time: </b>'+data.time +'</p><p><b>Size: </b>' +data.size + 'bytes' 
-				+'</p><p><b> Block Height (-1 si transaction non validée) : </b>' + data.block_height 
+				+'</p><p><b> Hauteur du block (-1 si transaction non validée) : </b>' + data.block_height 
 				+ '</p><p><b> Block Hash : </b>' + data.block_hash;
 
 			}
