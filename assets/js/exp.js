@@ -7,7 +7,10 @@ $(document).ready(function(){
 				sortie += data.error;
 			}
 			else{
-				sortie += '</p><p><b>Hash:</b> '+data.hash+'<p><b>Hauteur: </b>'+data.height+'</p><p><b>Time: </b>'+data.time +'</p><p><b>Taille: </b>' +data.size + ' bytes </p>';
+				sortie += '</p><h3> Détails du block</h3> <table class="table">' +
+				'<tr><th>Hash</th><td> '+data.hash+'</td></tr> <tr><th>Hauteur</th><td>'+data.height
+				+'</td></tr> <tr><th>Date</th><td>'+data.time +'</td></tr> <tr><th>Taille (bytes)</th><td>'
+				 +data.size + '</td></tr> </table> ';
 
 			}
 			$('#resultat').html( sortie );
@@ -21,10 +24,11 @@ $(document).ready(function(){
 				sortie += data.error;
 			}
 			else{
-				sortie += '</p><p><b>Adresses bitcoin impliquées dans la transaction:</b> '+data.addresses
-				+'<p><b>Hash: </b>'+data.hash+'</p><p><b>Time: </b>'+data.time +'</p><p><b>Size: </b>' +data.size + 'bytes' 
-				+'</p><p><b> Hauteur du block (-1 si transaction non validée) : </b>' + data.block_height 
-				+ '</p><p><b> Block Hash : </b>' + data.block_hash;
+				sortie +='</p><h3> Détails de la transaction</h3> <table class="table">' +
+				'<tr><th>Hash</th><td>'+data.hash+'</td></tr> <tr><th>Date</th><td>'+data.time +
+				'</td></tr> <tr><th>Taille (bytes)</th><td>' +data.size  
+				+'</td></tr> <tr><th>Hauteur (-1 si non validée)</th><td>' + data.block_height 
+				+ '</td></tr> <tr><th>Hash du block (bytes)</th><td>' + data.block_hash + '</td></tr> </table> ';
 
 			}
 			$('#resultat').html( sortie );
@@ -38,9 +42,11 @@ $(document).ready(function(){
 				sortie += data.error;
 			}
 			else{
-				sortie += '</p><p><b>Adresse:</b> '+data.address +'<p><b>Nombre de satoshis reçus : </b>'+data.total_received 
-				+'</p><p><b>Nombre de satoshis envoyés : </b>'+ data.total_sent  +'</p><p><b>Balance : </b>' +data.balance 
-				+'</p><p><b> Nombre de transactions associées : </b>' + data.n_tx 
+				sortie +="</p><h3> Détails de l'adresse</h3> <table class='table'>" 
+				+'<tr><th>Adresse</th><td>'+data.address +'</td></tr> <tr><th>Nombre de satoshis reçus</th><td>'
+				+data.total_received +'</td></tr> <tr><th>Nombre de satoshis envoyés</th><td>'+ data.total_sent  
+				+'</td></tr> <tr><th>balance</th><td>'+data.balance +'</td></tr> <tr><th>Nombre de transactions associées</th><td>'
+				+ data.n_tx + '</td></tr> </table> ';
 
 			}
 			$('#resultat').html( sortie );
