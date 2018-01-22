@@ -4487,12 +4487,12 @@
 	
 
 		float: left;
-		width: 50%;
+		width: 60%;
 		margin: 0 0 2rem 0;
 	}
 
 	#explbit .button {
-		width: 30%;
+		width: 40%;
 		text-align : center;
 		vertical-align: middle;
 		
@@ -4501,6 +4501,21 @@
     	color: #ffffff !important;
 
 
+	}
+
+	[v-cloak] {
+  		display: none;
+	}
+
+	.verified {
+       margin-top: 20px;
+       color: green;
+       font-size: 20px;
+	}
+	.unverified {
+       margin-top: 20px;
+       color: red;
+       font-size: 20px;
 	}
 
 

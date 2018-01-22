@@ -7,10 +7,16 @@
 <html>
 	<head>
 		<title>Preuve d'existence - Mostacchi Clara</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<meta charset="utf-8">
+ 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	<!-- Nottario CSS -->
+		<link href="assets/css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
 	</head>
 	<body class="is-loading">
 
@@ -48,13 +54,15 @@
 								</header>
 
 								<!-- Text stuff -->
-								<section v-if="!upload_visible">
+								<article class="box page-content">
+									<div id ="app">
 										<div class="container" id="maincontent" tabindex="-1">
+											<section v-if="!upload_visible">
          										 <div class="row">
               										<div class="col-lg-12">
                   										<div class="intro-text">
                       										
-                      										<hr class="star-light">
+                      										
                       										<span class="skills">Connectez vous à MetaMask</span>
                   										</div>
                   									<div>
@@ -62,11 +70,12 @@
 	                  								</div>
               										</div>
         										  </div>
+        									</section>
       									</div>
-  								</section>
+  								
 
-  									<section id = "upload" v-if="upload_visible" v-cloak>
-								     <div class="container">
+  								<section id = "upload" v-if="upload_visible" v-cloak>
+								    <div class="container">
 								       <div class="row">
 								         <div class="col-lg-12 text-center">
 								           <div v-if="web3Missing">
@@ -99,7 +108,7 @@
 								             </div>
 								           </div>
 								           <div v-if="animate">
-								             <p v-if="!error"><img src="img/animation.gif" /></p>
+								             <p v-if="!error"><img src="assets/img/animation.gif" /></p>
 								             <p v-if="!error"> Merci d'attendre que le contrat soit stocké dans la blockchain Ethereum. 
 								               Cela peut prendre jusqu'à une minute. Lorsque cela sera fait, vous serez redigié vers la page de confirmation.</p> 
 								             <p><a v-bind:href="etherscanLink" target="_new">Transaction Blockchain : {{ tx }}</a></p>
@@ -110,8 +119,10 @@
 								    </div>
 								  </section>
 								</div>
-																	</section>
-															</section>
+								</article>
+							</section>
+								</div>
+																	
 
 								
 
@@ -124,18 +135,21 @@
 					</div>
 
 			</div>
-
+		<!-- jQuery -->
+  			<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 		<!-- Scripts -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  			<script src="https://unpkg.com/vue"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="js/solidity.js"></script>
-  			<script src="js/nottario.js"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  			<script src="https://unpkg.com/vue"></script>
+			<script src="assets/js/solidity.js"></script>
+  			<script src="assets/js/nottario.js"></script>
+			
+  		
 
 
   			
