@@ -45,7 +45,7 @@
     </header>
    
     <section id = "upload" v-if="!hash || hash!='0x'">
-       <div class="container">
+      
              <div v-if="web3Missing">
                <p>Please install the Metamask Plugin or Mist Browser to use Nottario</p>
              </div>
@@ -67,7 +67,7 @@
                <div v-if="verified && droppedHash">VERIFIED</div>
                <div v-if="!verified && droppedHash">NOT VERIFIED</div>
 
-         </div>
+      
        </div>
     </section>
 
