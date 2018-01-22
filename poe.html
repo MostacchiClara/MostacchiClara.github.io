@@ -111,7 +111,7 @@
 								             <p v-if="!error"><img src="assets/img/animation.gif" /></p>
 								             <p v-if="!error"> Merci d'attendre que le contrat soit stocké dans la blockchain Ethereum. 
 								               Cela peut prendre jusqu'à une minute. Lorsque cela sera fait, vous serez redirigé vers la page de confirmation.</p> 
-								             <p><a v-bind:href="etherscanLink" target="_new">Transaction Blockchain : {{ tx }}</a></p>
+								             <p><a v-bind:href="etherscanLink" target="_blank">Transaction Blockchain : {{ tx }}</a></p>
 								             <p v-if="error">Une erreur est survenue. L'erreur est : "{{ error }}".</p>
 								           </div>
 								         </div>
