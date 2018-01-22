@@ -66,7 +66,7 @@
                       										<span class="skills">Pour tester la preuve d'existence, merci de vous connecter à MetaMask</span>
                   										</div>
                   									<div>
-	                    							<a href="#app"   type="button" class="button fit" v-on:click="display_upload">Enregistrer un texte !</a>
+	                    							<a href="#app"   type="button" class="button special fit" v-on:click="display_upload">Enregistrer un texte !</a>
 	                  								</div>
               										</div>
         										  </div>
@@ -85,11 +85,11 @@
 								           </div>
 								           <div v-if="!web3Missing">
 								             <div v-if="!hash">
-								               <h2>Drag and drop a file into the dropzone</h2>
+								               <p>Glisser et insérer un fichier dans la zone ci-dessous :</p>
 								               
 								             </div> 
 								             <div v-bind:class="{ dragging: dragging }" v-if="!hash" id="drop_zone" ondrop="drop_handler(event);" ondragover="allowDrop(event)" ondragleave="dragout(event)">
-								               <strong>Drop Zone ...</strong>
+								               <i>importez vos fichiers ici..;</i>
 								             </div>
 								             <div v-if="hash"> 
 								               <h2>Détails du fichier</h2>
