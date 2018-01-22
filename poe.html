@@ -104,13 +104,13 @@
 								             </div>
 								             <div class="buttonspace" v-if="!animate">
 								               <button type="button" class="button special" :disabled="!hash || !name || hash.length!=66" v-on:click="create_contract">Enregistrer</button>
-								               <button type="button" class="btn btn-danger btn-lg"  v-on:click="cancel_upload">Annuler</button>
+								               <button type="button" class="button"  v-on:click="cancel_upload">Annuler</button>
 								             </div>
 								           </div>
 								           <div v-if="animate">
 								             <p v-if="!error"><img src="assets/img/animation.gif" /></p>
 								             <p v-if="!error"> Merci d'attendre que le contrat soit stocké dans la blockchain Ethereum. 
-								               Cela peut prendre jusqu'à une minute. Lorsque cela sera fait, vous serez redigié vers la page de confirmation.</p> 
+								               Cela peut prendre jusqu'à une minute. Lorsque cela sera fait, vous serez redirigé vers la page de confirmation.</p> 
 								             <p><a v-bind:href="etherscanLink" target="_new">Transaction Blockchain : {{ tx }}</a></p>
 								             <p v-if="error">Une erreur est survenue. L'erreur est : "{{ error }}".</p>
 								           </div>
